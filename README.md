@@ -76,6 +76,10 @@ there is still an error says
 we will check by open CSV file, to find what column that consist of more than 50 character
 we see that column emp_title shows over 50 characters
 
-![image](https://github.com/user-attachments/assets/6c2a7920-80a7-4931-a62c-0886ba1cb774)
+<image src="https://github.com/user-attachments/assets/6c2a7920-80a7-4931-a62c-0886ba1cb774" width=60% heigh=60% />
 
+chnge Data type of Column name "emp_title" into varchar(100)
 
+![image](https://github.com/user-attachments/assets/4cf86c5b-1970-4528-89f7-95c6f399ad25)
+
+then we can click next until finish
