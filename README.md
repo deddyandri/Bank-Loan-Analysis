@@ -19,13 +19,13 @@ we can see Bank Loan DB has been created
 
 right click on Bank Loan DB then task, and import flat file
 
-![image](https://github.com/user-attachments/assets/ea7155c8-3c31-4ec0-8409-202081d26660)
+<image src="https://github.com/user-attachments/assets/ea7155c8-3c31-4ec0-8409-202081d26660" width=50% heigh=50% />
 
 There will be import flat file windows, in the specify input file section, 
 
 browse the location of the csv file that we will import.
 
-![image](https://github.com/user-attachments/assets/6e808ff6-f210-45b2-95d9-981f2bc3b120)
+<image src="https://github.com/user-attachments/assets/6e808ff6-f210-45b2-95d9-981f2bc3b120" wdth=50% heigh=50% />
 
 
 
