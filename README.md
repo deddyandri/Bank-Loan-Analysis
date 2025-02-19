@@ -78,8 +78,12 @@ we see that column emp_title shows over 50 characters
 
 <image src="https://github.com/user-attachments/assets/6c2a7920-80a7-4931-a62c-0886ba1cb774" width=60% heigh=60% />
 
-chnge Data type of Column name "emp_title" into varchar(100)
+chnge Data type of Column name "emp_title" into varchar(MAX)
 
 ![image](https://github.com/user-attachments/assets/4cf86c5b-1970-4528-89f7-95c6f399ad25)
 
-then we can click next until finish
+dont forget to uncheck the bottom of preview data
+
+![image](https://github.com/user-attachments/assets/1b4e7219-e8d0-4291-ba92-a1e631c21cf8)
+
+then we can click next until finish and close
