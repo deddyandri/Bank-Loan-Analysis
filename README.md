@@ -25,7 +25,7 @@ There will be import flat file windows, in the specify input file section,
 
 browse the location of the csv file that we will import.
 
-<image src="https://github.com/user-attachments/assets/6e808ff6-f210-45b2-95d9-981f2bc3b120" wdth=20% heigh=20% />
+<image src="https://github.com/user-attachments/assets/6e808ff6-f210-45b2-95d9-981f2bc3b120" width=50% heigh=50% />
 
 
 
