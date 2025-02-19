@@ -39,8 +39,43 @@ we change it with bank_loan_data
 
 <image src="https://github.com/user-attachments/assets/7b8e0129-810e-4661-a99c-d8905ff103e6" width=60% heigh=60% />
 
-on the preview data, we can see a query that similar with csv data 
+on the preview data, we can see a query that similar with csv data , then click next
 
 <image src="https://github.com/user-attachments/assets/8a27e671-4d03-4e6a-8758-e292ff25d6c2" width=60% heigh=60% />
+
+on the modify columns, we will add a primary key and change some data type
+
+<image src="https://github.com/user-attachments/assets/b6838619-fb72-4c46-986f-1f166957ef5f" width=60% heigh=60% />
+
+we make the id column the primary key, and nvarchar is changed to varchar, then click next and finish
+
+![image](https://github.com/user-attachments/assets/67a7f3e3-9dfd-4f7a-b814-d5c97263cd0e)
+
+### Error Message
+
+<image src="https://github.com/user-attachments/assets/17973bc1-923d-49fc-9c98-0fbd7b14e7db" width=60% heigh=60% />
+
+click on the error sign 
+
+the message says 
+
+![image](https://github.com/user-attachments/assets/5ff5d168-d96d-42e3-9611-aed10e8bf84e)
+
+then we go back to modify column , then find total_payment and loan_amount
+
+![image](https://github.com/user-attachments/assets/66c0893a-aad1-4866-9e41-a90b0afab302)
+
+we change data type from smallint into int, then click next
+
+![image](https://github.com/user-attachments/assets/31fc2397-6387-4fd1-908a-22e79fde2717)
+
+there is still an error says 
+
+![image](https://github.com/user-attachments/assets/307452bb-fe51-4ac0-89f5-c16082cbe0a6)
+
+we will check by open CSV file, to find what column that consist of more than 50 character
+we see that column emp_title shows over 50 characters
+
+![image](https://github.com/user-attachments/assets/6c2a7920-80a7-4931-a62c-0886ba1cb774)
 
 
