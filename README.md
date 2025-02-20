@@ -55,11 +55,24 @@ CHARTS
    aiding in the understanding of the primary reasons borrowers seek financing.
 8. ***Home Ownership Analysis (Tree Map)***: For a hierarchical view of how home ownership impacts loan applications and disbursements.
 
-### ***Metrics to be shown ***: **'Total Loan Applications,'** **'Total Funded Amount,'** and **'Total Amount Received'**
+### Metrics to be shown : 
+**'Total Loan Applications,'** **'Total Funded Amount,'** and **'Total Amount Received'**
 
 ---
 
 ### DASHBOARD 3: DETAILS ###
+
+GRID
+Need for a comprehensive 'Details Dashboard' that provides a consolidated view of all the essential information within our loan data. 
+This Details Dashboard aims to offer a holistic snapshot of key loan-related metrics and data points, enabling users to access critical 
+information efficiently.
+
+Objective:
+The primary objective of the Details Dashboard is to provide a comprehensive and user-friendly interface for accessing vital loan data. 
+It will serve as a one-stop solution for users seeking detailed insights into our loan portfolio, borrower profiles, and loan performance.
+
+
+
 
 
 ### Steps Process
