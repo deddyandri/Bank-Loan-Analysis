@@ -55,6 +55,12 @@ CHARTS
    aiding in the understanding of the primary reasons borrowers seek financing.
 8. ***Home Ownership Analysis (Tree Map)***: For a hierarchical view of how home ownership impacts loan applications and disbursements.
 
+### ***Metrics to be shown ***: **'Total Loan Applications,'** **'Total Funded Amount,'** and **'Total Amount Received'**
+
+---
+
+### DASHBOARD 3: DETAILS ###
+
 
 ### Steps Process
 
