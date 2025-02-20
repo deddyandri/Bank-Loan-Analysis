@@ -184,4 +184,6 @@ the outcome are
 
 ![image](https://github.com/user-attachments/assets/57f6f012-ccc2-459b-a08c-09aded373b50)
 
+now we would count the Month-to-Date (MTD) Loan Applications
+
 
