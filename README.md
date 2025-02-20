@@ -72,9 +72,9 @@ The primary objective of the Details Dashboard is to provide a comprehensive and
 It will serve as a one-stop solution for users seeking detailed insights into our loan portfolio, borrower profiles, and loan performance.
 
 ---
-### Steps Process
+## Steps Process
 
-#### Create Database
+### Create Database
 
 ![image](https://github.com/user-attachments/assets/627d6144-34a8-46ea-899c-da637d9adeac)
 
@@ -86,7 +86,7 @@ we can see Bank Loan DB has been created
 
 ![image](https://github.com/user-attachments/assets/6852e8e2-e4ba-48cc-8005-4ba7dc5c9501)
 
-#### Import files
+### Import files
 
 right click on Bank Loan DB then task, and import flat file
 
