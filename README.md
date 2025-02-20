@@ -158,3 +158,30 @@ dont forget to uncheck the bottom of preview data
 ![image](https://github.com/user-attachments/assets/1b4e7219-e8d0-4291-ba92-a1e631c21cf8)
 
 then we can click next until finish and close
+
+we start with blank query, then click on New Query
+
+![image](https://github.com/user-attachments/assets/ba20cbda-2bf8-408a-b9d3-46fb8d2264bb)
+
+type 
+
+```sql
+SELECT * FROM bank_loan_data
+```
+we got
+
+![image](https://github.com/user-attachments/assets/e6d9b42f-8a7a-43da-a459-e091be5ae537)
+
+---
+we would find out KPI number 1 ***Total Loan Applications***
+
+```sql
+SELECT 
+	COUNT(id)  Total_Loan_application
+FROM bank_loan_data 
+```
+the outcome are
+
+![image](https://github.com/user-attachments/assets/57f6f012-ccc2-459b-a08c-09aded373b50)
+
+
