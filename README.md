@@ -44,6 +44,16 @@ this grid view will empower us to make data-driven decisions and assess the heal
 
 ---
 
+### DASHBOARD 2: OVERVIEW ###
+CHARTS
+1. ***Monthly Trends by Issue Date (Line Chart)***:  To identify seasonality and long-term trends in lending activities
+2. ***Regional Analysis by State (Filled Map)***: To identify regions with significant lending activity and assess regional disparities
+3. ***Loan Term Analysis (Donut Chart)***: To allow the client to understand the distribution of loans across various term lengths.
+4. ***Employee Length Analysis (Bar Chart)***: How lending metrics are distributed among borrowers with different employment lengths,
+   helping us assess the impact of employment history on loan applications.
+6. ***Loan Purpose Breakdown (Bar Chart)***: Will provide a visual breakdown of loan metrics based on the stated purposes of loans,
+   aiding in the understanding of the primary reasons borrowers seek financing.
+8. ***Home Ownership Analysis (Tree Map)***: For a hierarchical view of how home ownership impacts loan applications and disbursements.
 
 
 ### Steps Process
