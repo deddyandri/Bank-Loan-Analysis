@@ -183,7 +183,8 @@ we got
 ![image](https://github.com/user-attachments/assets/e6d9b42f-8a7a-43da-a459-e091be5ae537)
 
 ---
-we would find out KPI number 1 ***Total Loan Applications***
+## Bank Requirement : 
+1 ***Total Loan Applications***
 
 ```sql
 SELECT 
@@ -194,7 +195,33 @@ the outcome are
 
 ![image](https://github.com/user-attachments/assets/57f6f012-ccc2-459b-a08c-09aded373b50)
 
-now we would count the Month-to-Date (MTD) Loan Applications
+2. Month-to-Date (MTD) Loan Applications
+
+```sql
+-- MTD Loan Application
+
+SELECT COUNT(id) as MTD_Total_Application FROM Financial_loan
+WHERE MONTH(issue_date) = 12
+```
+we got
+
+![image](https://github.com/user-attachments/assets/2306a79b-0158-492c-bd06-06633c896502)
+
+3. Total Funded Amount
+   
+```sql
+--Total Funded Amount
+
+SELECT 
+	SUM(total_payment) as Total_loan_amount
+	from Financial_loan
+```
+result
+
+![image](https://github.com/user-attachments/assets/ba9adfef-d69b-4601-b405-bb0b6c65efd5)
+
+
+
 
 
 
