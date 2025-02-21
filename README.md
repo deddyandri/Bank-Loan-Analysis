@@ -197,22 +197,4 @@ the outcome are
 now we would count the Month-to-Date (MTD) Loan Applications
 
 
----
-masalahnya 
-pas ngetik ini 
 
-![image](https://github.com/user-attachments/assets/a20460d0-d7a4-404c-b65c-0540723835d5)
-
-keluarnya ini
-
-![image](https://github.com/user-attachments/assets/5235a221-ab0a-490f-a7eb-d81b54359811)
-
-pas di periksa, kolom issue_date jenisnya nvarchar(50), not null , kolom date yg lain juga sama, ini harus diganti nih type datanya
-
-![image](https://github.com/user-attachments/assets/84c59521-4e4f-44f7-8231-f7b7b578e1d1)
-
-caranya klik di new query 
-
-![image](https://github.com/user-attachments/assets/6aa8288b-0212-4517-9d93-53ef1a3d3bea)
-
-hasilnya seteleh di execute
