@@ -399,6 +399,28 @@ the result is $ 435.786.170
 ![image](https://github.com/user-attachments/assets/102020f4-306b-4abd-b211-63a2b1ee8fdd)
 
 
+# Bad Loan Issued
+
+similar with above query, just change loan_status into "Charge Off"
+
+```sql
+-- BAD LOAN ISSUE
+SELECT
+	(SELECT
+	COUNT(id) from Financial_loan
+	WHERE loan_status ='Charged Off')*100.
+	/
+	(SELECT
+	COUNT(id) from Financial_loan)
+as Bad_Loan_Percentage
+```
+
+the result is 13,8 %
+
+![image](https://github.com/user-attachments/assets/b2f03d50-17c3-47db-b33c-5cd173eec369)
+
+
+
 
 
 
