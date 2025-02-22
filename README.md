@@ -464,6 +464,28 @@ the result is $ 37.284.763
 
 ![image](https://github.com/user-attachments/assets/0d7aad40-e991-43d9-8ef4-b7cc78fbf3f8)
 
+---
+## Loan Status
+
+```sql
+-- LOAN STATUS
+SELECT
+	loan_status,
+	COUNT(id) as LoanCount,
+	SUM(total_payment) as Total_Maount_Received,
+	SUM(loan_amount) as Total_Funded_Amount,
+	AVG(int_rate * 100) as Interest_Rate,
+	AVG(dti*100) as DTI
+FROM
+	Financial_loan
+GROUP BY
+	loan_status
+```
+
+the result, we will use it as Visualization on PowerBI Desktop
+
+![image](https://github.com/user-attachments/assets/1ecafd09-8ef4-445e-9bca-bf67b788011d)
+
 
 
 
