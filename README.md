@@ -324,7 +324,7 @@ then find total number of loan
 ```sql
 COUNT(id) from Financial_loan
 ```
-we got 34.576 
+we got 38.576 
 
 ![image](https://github.com/user-attachments/assets/05a14bf7-6209-4688-84db-5fbf0f6b487f)
 
@@ -340,7 +340,8 @@ SELECT
 	COUNT(id) from Financial_loan)
 as Good_Loan_Percentage
 ```
-the final result is 
+the final result is 86.17 %
+
 
 
 
