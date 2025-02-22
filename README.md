@@ -397,8 +397,11 @@ the result is $ 435.786.170
 
 similar with above query, just change loan_status into "Charge Off"
 
+1. Bad Loan Percentage
+   
 ```sql
--- BAD LOAN ISSUE
+
+-- 1. Bad Loan Percentage
 SELECT
 	(SELECT
 	COUNT(id) from Financial_loan
@@ -413,7 +416,37 @@ the result is 13,8 %
 
 ![image](https://github.com/user-attachments/assets/b2f03d50-17c3-47db-b33c-5cd173eec369)
 
+2. Bad Loan Application
 
+```sql
+-- 2. Bad Loan Applications
+SELECT
+	COUNT(id) as Bad_Loan_Applications
+FROM
+	Financial_loan
+WHERE
+	loan_status ='Charged Off'
+```
+
+results is 5.333 bad loan application
+
+![image](https://github.com/user-attachments/assets/0418b92c-75f7-4450-a6de-add5931acf75)
+
+3. Bad Loan Funded Amount
+
+```sql
+-- 3. Bad Loan Funded Amount
+SELECT
+	SUM(loan_amount) as Bad_loan_funded_amount
+FROM
+	Financial_loan
+WHERE
+	loan_status ='Charged Off'
+```
+
+the result is $ 65.532.225
+
+![image](https://github.com/user-attachments/assets/8af9ee5a-eb1c-42a4-a0aa-75be19d31421)
 
 
 
