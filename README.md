@@ -7,7 +7,7 @@
 Key Performance Indicators (KPIs) Requirements:
 1. ***Total Loan Applications*** :
    We need to calculate the total number of loan applications received during a specified period.
-   Additionally, it is essential to monitor the Month-to-Date (MTD) Loan Applications and track changes Month-over-Month (MoM).
+   Additionally, it is essential to monitor the Month-to-Date (MTD) Loan Applications.
 3. ***Total Funded Amount*** :
    Understanding the total amount of funds disbursed as loans is crucial.
    We also want to keep an eye on the MTD Total Funded Amount and analyse the Month-over-Month (MoM) changes in this metric.
@@ -21,7 +21,7 @@ Key Performance Indicators (KPIs) Requirements:
    Evaluating the average DTI for our borrowers helps us gauge their financial health.
    We need to compute the average DTI for all loans, MTD, and track Month-over-Month (MoM) fluctuations.
 
-10. Good Loan v Bad Loan KPI’s
+10. ***Good Loan v Bad Loan KPI’s***
     **Good Loan:**
     * Good Loan Application Percentage
     * Good Loan Applications
@@ -196,10 +196,10 @@ the outcome are
 
 ![image](https://github.com/user-attachments/assets/57f6f012-ccc2-459b-a08c-09aded373b50)
 
-2. Month-to-Date (MTD) Loan Applications
+1a. Month-to-Date (MTD) Loan Applications
 
 ```sql
--- 2. MTD Loan Application
+-- 1a. MTD Loan Application
 
 SELECT COUNT(id) as MTD_Total_Application FROM Financial_loan
 WHERE MONTH(issue_date) = 12
@@ -208,10 +208,10 @@ we got
 
 ![image](https://github.com/user-attachments/assets/2306a79b-0158-492c-bd06-06633c896502)
 
-3. Total Funded Amount
+2. Total Funded Amount
    
 ```sql
--- 3. Total Funded Amount
+-- 2. Total Funded Amount
 
 SELECT 
 	SUM(loan_amount) as Total_loan_amount
@@ -221,10 +221,10 @@ result
 
 ![image](https://github.com/user-attachments/assets/a38f8e17-7611-4bd2-9a65-37bcdb71a7b9)
 
-4. Total Amount Received
+3. Total Amount Received
 
 ```sql
--- 4. Total Amount Received
+-- 3. Total Amount Received
 SELECT
 	SUM(total_payment) as Total_loan_received
 FROM
@@ -240,9 +240,9 @@ we use coulumn
 
 ![image](https://github.com/user-attachments/assets/6c6d80ca-6215-48f6-8613-1174eed0998a)
 
-5. 
+4.  Average Interest Rate
 ```sql
--- 5. Average Interest Rate
+-- 4. Average Interest Rate
 SELECT
 	ROUND(AVG(int_rate), 4) as Average_int_rate
 FROM
@@ -265,5 +265,29 @@ end result is
 
 ![image](https://github.com/user-attachments/assets/a8300e27-0c7e-474f-bce9-59b35ef0e107)
 
+
+5. Average Debt to Income Ratio
+A debt-to-income (DTI) ratio is a percentage that measures how much of your monthly income goes toward debt.
+It's calculated by dividing your total monthly debt by your gross monthly income
+
+Purpose: DTI measures the borrower's debt burden relative to income. It gauges the borrower's capacity to take on additional debt.
+Use for Banks: Banks use DTI to assess a borrower's ability to handle loan payments and make responsible lending decisions.
+
+from the financial loan table, the debt to income ratio column is already available, 
+so we don't need to divide montly debt by gross montly income.
+the column name is dti
+
+![image](https://github.com/user-attachments/assets/debcad40-9ae8-4b29-93a6-84440629a693)
+
+```sql
+-- 5. Average Debt to Income Ratio
+SELECT 
+	AVG(dti)*100 as Average_DTI
+FROM Financial_loan
+```
+
+the result :
+
+![image](https://github.com/user-attachments/assets/449f76aa-0cdb-4f22-a0fd-ab28ac05a11d)
 
 
