@@ -74,15 +74,9 @@ It will serve as a one-stop solution for users seeking detailed insights into ou
 ---
 ## Steps Process
 
-periksa file csv nya
+Firstly we have to check the file, data type whether the data type is appropriate 
 
-
-
-
-
-
-
-
+especially those related to dates and numbers
 
 ### Create Database
 
