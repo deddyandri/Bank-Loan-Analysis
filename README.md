@@ -184,9 +184,10 @@ we got
 
 ---
 ## Bank Requirement : 
-1 ***Total Loan Applications***
+1 Total Loan Applications
 
 ```sql
+-- 1. Total Loan Application
 SELECT 
 	COUNT(id)  Total_Loan_application
 FROM bank_loan_data 
@@ -198,7 +199,7 @@ the outcome are
 2. Month-to-Date (MTD) Loan Applications
 
 ```sql
--- MTD Loan Application
+-- 2. MTD Loan Application
 
 SELECT COUNT(id) as MTD_Total_Application FROM Financial_loan
 WHERE MONTH(issue_date) = 12
@@ -210,18 +211,59 @@ we got
 3. Total Funded Amount
    
 ```sql
---Total Funded Amount
+-- 3. Total Funded Amount
 
 SELECT 
-	SUM(total_payment) as Total_loan_amount
+	SUM(loan_amount) as Total_loan_amount
 	from Financial_loan
 ```
 result
 
-![image](https://github.com/user-attachments/assets/ba9adfef-d69b-4601-b405-bb0b6c65efd5)
+![image](https://github.com/user-attachments/assets/a38f8e17-7611-4bd2-9a65-37bcdb71a7b9)
 
+4. Total Amount Received
 
+```sql
+-- 4. Total Amount Received
+SELECT
+	SUM(total_payment) as Total_loan_received
+FROM
+	Financial_loan
+```
+result
 
+![image](https://github.com/user-attachments/assets/c0226b8b-cea7-4824-b75b-697f3409222d)
+
+now we want to know the average interset rate
+
+we use coulumn
+
+![image](https://github.com/user-attachments/assets/6c6d80ca-6215-48f6-8613-1174eed0998a)
+
+5. 
+```sql
+-- 5. Average Interest Rate
+SELECT
+	ROUND(AVG(int_rate), 4) as Average_int_rate
+FROM
+	Financial_loan
+```
+the result is
+
+![image](https://github.com/user-attachments/assets/52b62cb4-4a76-457c-92d3-4723d4aec678)
+
+we need it in percentage form
+
+```sql
+SELECT
+	ROUND(AVG(int_rate), 4) * 100 as Average_int_rate
+FROM
+	Financial_loan
+```
+
+end result is
+
+![image](https://github.com/user-attachments/assets/a8300e27-0c7e-474f-bce9-59b35ef0e107)
 
 
 
