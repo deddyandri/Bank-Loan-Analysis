@@ -290,4 +290,59 @@ the result :
 
 ![image](https://github.com/user-attachments/assets/449f76aa-0cdb-4f22-a0fd-ab28ac05a11d)
 
+---
+# Good Loan Issued
+
+1. Good Loan Percentage
+
+first, we will review the financial loan table, 
+
+there is a column called loan_status that will give the results of 
+
+the Good loan and Bad loan values for the Good vs Bad Loan column.
+
+![image](https://github.com/user-attachments/assets/a051d694-c5ba-4145-a0eb-176ee063c39f)
+
+Good loan categories are those with Fully paid and Current status.
+
+while the Bad Loan category is Charged Off.
+
+![image](https://github.com/user-attachments/assets/f88785d5-2783-41fb-bc3c-64ff5c3c3c21)
+
+we first find how many are loan_status with fully paid and current 
+
+```sql
+SELECT
+	COUNT(id) from Financial_loan
+	WHERE loan_status ='Fully Paid' OR loan_status = 'Current'
+```
+the result is 33.243
+
+![image](https://github.com/user-attachments/assets/73bb0703-4d8e-458b-aed2-dc0e01bacd71)
+
+then find total number of loan
+```sql
+COUNT(id) from Financial_loan
+```
+we got 34.576 
+
+![image](https://github.com/user-attachments/assets/05a14bf7-6209-4688-84db-5fbf0f6b487f)
+
+now we can divide all using subquery method, and name it as Good Loan Percentage
+
+```sql
+SELECT
+	(SELECT
+	COUNT(id) from Financial_loan
+	WHERE loan_status ='Fully Paid' OR loan_status = 'Current')*100.
+	/
+	(SELECT
+	COUNT(id) from Financial_loan)
+as Good_Loan_Percentage
+```
+the final result is 
+
+
+
+
 
