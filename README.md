@@ -342,7 +342,46 @@ as Good_Loan_Percentage
 ```
 the final result is 86.17 %
 
+2. Good Loan Application
 
+as we have made before
+
+```sql
+SELECT
+COUNT(id) as Good_Loan_Applications
+FROM
+Financial_loan
+WHERE loan_status = 'Fully Paid' OR loan_status = 'Current'
+```
+we get the same result as above
+
+![image](https://github.com/user-attachments/assets/e230d0dd-1eb9-44b0-b5ef-2010d8b2f18b)
+
+
+3. Good Loan Funded Amount
+
+Loan funded means, loans provided by banks to customers
+
+from the given file there are loan_amount and total_payment columns
+
+![image](https://github.com/user-attachments/assets/b91dd28a-5ec1-470d-b4be-86981080c5c4)
+
+A loan amount is the total amount of money customers borrow, 
+
+while total payments is the total amount of money customers will pay back over the life of the loan
+
+we will use loan_amount column
+
+```sql
+SELECT
+	SUM(loan_amount) as Good_Loan_Funded_amount
+	FROM
+Financial_loan
+	WHERE loan_status = 'Fully Paid' OR loan_status = 'Current'
+```
+the result is $ 370.224.850
+
+![image](https://github.com/user-attachments/assets/4864df1a-3509-4e63-94e6-6b3da87095b9)
 
 
 
