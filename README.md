@@ -448,6 +448,22 @@ the result is $ 65.532.225
 
 ![image](https://github.com/user-attachments/assets/8af9ee5a-eb1c-42a4-a0aa-75be19d31421)
 
+4. Bad Loan Amount Received
+
+```sql
+-- 4. Bad Loan Amount Received
+SELECT
+	SUM(total_payment) as Bad_Loan_amount_received
+FROM
+	Financial_loan
+WHERE
+	loan_status = 'Charged Off'
+```
+
+the result is $ 37.284.763
+
+![image](https://github.com/user-attachments/assets/0d7aad40-e991-43d9-8ef4-b7cc78fbf3f8)
+
 
 
 
