@@ -370,9 +370,10 @@ A loan amount is the total amount of money customers borrow,
 
 while total payments is the total amount of money customers will pay back over the life of the loan
 
-we will use loan_amount column
+we will use loan_amount column just for Good Loan Status
 
 ```sql
+-- 3. Good Loan Funded Amount
 SELECT
 	SUM(loan_amount) as Good_Loan_Funded_amount
 	FROM
@@ -382,6 +383,21 @@ Financial_loan
 the result is $ 370.224.850
 
 ![image](https://github.com/user-attachments/assets/4864df1a-3509-4e63-94e6-6b3da87095b9)
+
+4. Good Loan Amount Received
+```sql
+-- 4. Good Loan Amount Received
+SELECT
+	SUM(total_payment) as Good_Loan_amount_received
+FROM
+	Financial_loan
+WHERE 
+	loan_status= 'Fully Paid' OR loan_status = 'Current'
+```
+the result is $ 435.786.170
+
+![image](https://github.com/user-attachments/assets/102020f4-306b-4abd-b211-63a2b1ee8fdd)
+
 
 
 
