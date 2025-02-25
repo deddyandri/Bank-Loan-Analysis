@@ -489,6 +489,7 @@ the result, we will use it as Visualization on PowerBI Desktop
 ---
 ## Bank Loan Report
 
+### MONTH 
 to find Total Funded Amount and Total Amount Received for every month
 
 we will use column
@@ -516,5 +517,47 @@ ORDER BY MONTH(issue_date)
 the result are
 
 ![image](https://github.com/user-attachments/assets/6df0b1fc-a5a8-468c-926d-4ca5b9cb34cf)
+
+### STATE
+
+we will look for any State related to this bank loan
+
+we will use id, addres_state, loan_amount and total_payment column
+
+```sql
+-- STATE
+
+SELECT
+address_state as State,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY address_state
+ORDER BY address_state
+```
+
+we got
+
+![image](https://github.com/user-attachments/assets/7fd775cf-c600-4917-8675-571e98dde999)
+
+we would list from the biggest loan amount received to the lowest
+
+```sql
+-- order from biggest to lower
+
+SELECT
+address_state as State,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY address_state
+ORDER BY Total_Amount_Received DESC
+```
+the result are CA (California), NY(New York) and TX(Texas) are the biggest Loan State , and also the biggest Total loan Application
+
+![image](https://github.com/user-attachments/assets/b4b64582-e865-4453-b6d8-a993d2e90762)
+
 
 
