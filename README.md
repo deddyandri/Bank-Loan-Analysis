@@ -610,3 +610,42 @@ ORDER BY emp_length
 the result are
 
 ![image](https://github.com/user-attachments/assets/573a05a0-e111-40a1-8d69-28163341039b)
+
+### Purpose
+
+```sql
+---Purpose
+SELECT
+	Purpose as Purpose,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY Purpose
+ORDER BY Purpose
+```
+we got
+
+![image](https://github.com/user-attachments/assets/f58279ba-1530-4486-b774-3d2e962f777e)
+
+then we will find the top purpose based on Total Funded amount
+
+```sql
+--- Top Purpose
+SELECT
+	Purpose as Purpose,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY Purpose
+ORDER BY Total_Funded_Amount DESC
+```
+We know that debt consolidation, credit cards, and home improvement 
+
+are the biggest purpose of borrowers.
+
+![image](https://github.com/user-attachments/assets/9543868d-2ae2-43ae-8a61-cccc5d83b0ad)
+
+
+
