@@ -486,6 +486,35 @@ the result, we will use it as Visualization on PowerBI Desktop
 
 ![image](https://github.com/user-attachments/assets/1ecafd09-8ef4-445e-9bca-bf67b788011d)
 
+---
+## Bank Loan Report
 
+to find Total Funded Amount and Total Amount Received for every month
+
+we will use column
+
+id, issue_date , loan_amount and total_payment 
+
+```sql
+-- B. BANK LOAN REPORT 
+
+-- MONTH
+
+SELECT
+	MONTH(issue_date) as Month_Number,
+	DATENAME(MONTH,issue_date) as Month_name,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+
+FROM Financial_loan
+GROUP BY MONTH(issue_date), DATENAME(MONTH, issue_date)
+
+ORDER BY MONTH(issue_date)
+```
+
+the result are
+
+![image](https://github.com/user-attachments/assets/6df0b1fc-a5a8-468c-926d-4ca5b9cb34cf)
 
 
