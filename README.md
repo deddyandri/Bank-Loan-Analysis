@@ -559,5 +559,28 @@ the result are CA (California), NY(New York) and TX(Texas) are the biggest Loan 
 
 ![image](https://github.com/user-attachments/assets/b4b64582-e865-4453-b6d8-a993d2e90762)
 
+### Term
+
+Term defines the duration of the loan in months. It sets the repayment period.
+Banks use the term to structure loan agreements, calculate interest payments, and manage loan maturities.
+
+we will know how much term this loan is given
+
+```sql
+--TERM
+SELECT
+term as Term,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY term
+ORDER BY Term
+```
+
+the resuls :
+
+![image](https://github.com/user-attachments/assets/eee7e807-6d2d-439b-859e-10eaf207c9f4)
+
 
 
