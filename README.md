@@ -582,5 +582,31 @@ the resuls :
 
 ![image](https://github.com/user-attachments/assets/eee7e807-6d2d-439b-859e-10eaf207c9f4)
 
+### Employee Length
 
+next, we will find employee length
+***Purpose***: Employee Length provides insights into the borrower's employment stability. 
 
+Longer employment durations may indicate greater job security.
+
+***Use for Banks***: Banks consider employment length when assessing a borrower's ability to repay. 
+
+Stable employment often translates to a lower default risk.
+
+we use emp_length column
+
+```sql
+--Employee Length
+SELECT
+	emp_length as Employee_Length,
+	COUNT(id) as Total_Loan_Applications,
+		SUM(loan_amount) as Total_Funded_Amount,
+		SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY emp_length
+ORDER BY emp_length
+```
+
+the result are
+
+![image](https://github.com/user-attachments/assets/573a05a0-e111-40a1-8d69-28163341039b)
