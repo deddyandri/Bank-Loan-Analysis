@@ -647,5 +647,32 @@ are the biggest purpose of borrowers.
 
 ![image](https://github.com/user-attachments/assets/9543868d-2ae2-43ae-8a61-cccc5d83b0ad)
 
+### Home Ownership
+
+in the csv file, there is a column named home_ownership
+
+![image](https://github.com/user-attachments/assets/ca9527c8-088c-4bfe-b24d-3db6b0d65045)
+
+Home Ownership indicates the borrower's housing status. It offers insights into financial stability.
+
+Banks use this field to assess collateral availability and borrower stability. Homeowners may have lower default rates
+
+--Home Ownership
+```sql
+SELECT
+	home_ownership as Home_Ownership,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY home_ownership
+ORDER BY home_ownership
+```
+
+the result are 
+
+![image](https://github.com/user-attachments/assets/035303c9-360b-4955-b6ff-2576a70204c0)
+
+
 
 
