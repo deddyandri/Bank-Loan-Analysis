@@ -690,5 +690,7 @@ As a result, bank customer who have a homeowner MORTGAGE have the highest total 
 
 ![image](https://github.com/user-attachments/assets/8829b2b3-cbb1-4029-8f72-6e05f5115d81)
 
+NOW we move to Power BI Desktop to make Visualiztion
+
 
 
