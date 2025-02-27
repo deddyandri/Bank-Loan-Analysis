@@ -673,6 +673,22 @@ the result are
 
 ![image](https://github.com/user-attachments/assets/035303c9-360b-4955-b6ff-2576a70204c0)
 
+if we create a list based on Total_Amount_Funds from the highest
+
+```sql
+SELECT
+	home_ownership as Home_Ownership,
+	COUNT(id) as Total_Loan_Applications,
+	SUM(loan_amount) as Total_Funded_Amount,
+	SUM(total_payment) as Total_Amount_Received
+FROM Financial_loan
+GROUP BY home_ownership
+ORDER BY Total_Funded_Amount DESC
+```
+
+As a result, bank customer who have a homeowner MORTGAGE have the highest total funded amount 
+
+![image](https://github.com/user-attachments/assets/8829b2b3-cbb1-4029-8f72-6e05f5115d81)
 
 
 
