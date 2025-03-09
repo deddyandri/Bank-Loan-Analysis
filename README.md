@@ -1,5 +1,8 @@
 # Bank-Loan-Analysis
 
+![image](https://github.com/user-attachments/assets/61e28158-b866-4d9d-a75f-30deb95328cc)
+
+
 # Final Result
 
 ![image](https://github.com/user-attachments/assets/ca5a8eb0-2693-48d5-9057-cfad0ff0e273)
