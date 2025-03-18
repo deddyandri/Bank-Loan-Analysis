@@ -1,5 +1,7 @@
 # Bank-Loan-Analysis
 
+[Visualization](https://app.powerbi.com/links/WE1RIBu1JQ?ctid=edcacd27-3770-4189-93ce-d963668dafdc&pbi_source=linkShare)
+
 # Final Result
 
 ![image](https://github.com/user-attachments/assets/ca5a8eb0-2693-48d5-9057-cfad0ff0e273)
